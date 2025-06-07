@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/shared/styles/globals.css";
+import { ViewBlockDesk } from "@/shared/components/view-block";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main className="block md:hidden">{children}</main>
+        <main className="hidden md:block"><ViewBlockDesk/></main>
       </body>
     </html>
   );
