@@ -19,17 +19,17 @@ export class PropertyController implements Controller {
 
       if (!response) return serverError(new Error("Api do not response!"))
 
-      const data = response.body
+      const data = response.body;
 
-      const propertyData = data?.find(p => p.id === id)
+      const propertyData = data?.find(p => p.id === id);
 
-      if (!propertyData) return badRequest(new Error('Imovel não encontrado!'))
+      if (!propertyData) return badRequest(new Error('Imovel não encontrado!'));
 
-      const property = treatmentDataResponseItem(propertyData)
+      const property = treatmentDataResponseItem(propertyData);
 
-      return ok(property)
+      return ok(property);
     } catch (error: any) {
-      return serverError(error)
+      return serverError(error);
     }
   }
 }

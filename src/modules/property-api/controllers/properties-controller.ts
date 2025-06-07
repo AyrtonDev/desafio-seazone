@@ -18,25 +18,19 @@ export class PropertiesController implements Controller {
       const response = await this.httpClient.request({
         method: 'get',
         url: this.url,
-      })
+      });
 
-      if (!response) return serverError(new Error("Api do not response!"))
+      if (!response) return serverError(new Error("Api do not response!"));
 
-      const data = response.body
+      const data = response.body;
 
-      if (!hasFilters) {
-        console.log('chegou aqui')
-        console.log(treatmentDataResponseList(data!))
-        return ok(treatmentDataResponseList(data!))
-      }
+      if (!hasFilters) return ok(treatmentDataResponseList(data!));
 
-      console.log('passou')
+      const listFiltered = data?.filter(property => validationFilter(property, filters));
 
-      const listFiltered = data?.filter(property => validationFilter(property, filters))
-
-      return ok(listFiltered)
+      return ok(listFiltered);
     } catch (error: any) {
-      return serverError(error)
+      return serverError(error);
     }
   }
 }

@@ -1,4 +1,4 @@
-import { makePropertiesController } from '@/main/factories/properties-controller-factory';
+import { makePropertiesController } from '@/modules/property-api/main/factories/properties-controller-factory';
 
 export async function POST(req: Request) {
   if (req.method !== 'POST') return new Response(JSON.stringify({ message: 'Método não permitido' }), { status: 405 });

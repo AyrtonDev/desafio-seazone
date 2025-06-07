@@ -1,4 +1,4 @@
-import { makePropertyController } from '@/main/factories/property-controller-factory';
+import { makePropertyController } from '@/modules/property-api/main/factories/property-controller-factory';
 import { ParamsT } from '@/shared/types';
 
 export async function GET(req: Request, { params }: ParamsT) {

@@ -36,6 +36,7 @@ export function treatmentDataResponseList(data: PropertyT[]): PropertyItem[] {
     pricePerNight: item.pricePerNight,
     rating: item.rating,
     reviewCount: item.numberOfReviews,
-    title: item.title
+    title: item.title,
+    image: item.imageUrl
   }))
 }

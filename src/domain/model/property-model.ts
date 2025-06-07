@@ -43,4 +43,5 @@ export interface PropertyItem {
   rating: number;
   reviewCount: number;
   available: boolean;
+  image: string
 }
