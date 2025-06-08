@@ -12,7 +12,7 @@ export const mockImages= [
   {
     id: 2,
     type: "casa de praia",
-    mainImage: "https://images.pexels.com/photos/210557/pexels-photo-210557.jpeg",
+    mainImage: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/173625874.jpg?k=5d9a7d0bcdb33c8c6959ac1d03cd869a7a34cbc1e16485486e518fb846fb664a&o=",
     images: [
       "https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg",
       "https://images.pexels.com/photos/210557/pexels-photo-210557.jpeg",
@@ -43,7 +43,7 @@ export const mockImages= [
   {
     id: 5,
     type: "chalé",
-    mainImage: "https://blog.lojasdonna.com.br/wp-content/uploads/2019/12/casa-de-praia.jpg",
+    mainImage: "https://conteudo.imguol.com.br/c/entretenimento/42/2023/06/14/airbnb-gramado-1686764506959_v2_900x506.jpg",
     images: [
       "https://images.pexels.com/photos/1769604/pexels-photo-1769604.jpeg",
       "https://images.pexels.com/photos/1662458/pexels-photo-1662458.jpeg",

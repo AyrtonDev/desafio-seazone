@@ -9,7 +9,7 @@ import { makeAxiosHttpClient } from "@/modules/property/main/http";
 
 // type Props = {}
 
-export default function PropertyList({}) {
+export default function PropertyListPage({}) {
   const [list, setList] = useState<PropertyItem[] | null>(null)
 
   useEffect(()=>{
