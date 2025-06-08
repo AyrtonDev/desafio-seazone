@@ -8,16 +8,12 @@
 
 3. rode em seu terminal o comando:
 <pre><code>
-```sh
 npm install
-````
 </code></pre>
 
 4. após roda o comando de instalação, rode o proximo comando para inicializar o projeto:
 <pre><code>
-```sh
 npm run dev
-```
 </code></pre>
 5. se todos os passo forem seguidos de forma correta, acesse: http://localhost:3000/
 
