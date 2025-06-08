@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/shared/styles/globals.css";
+import { ViewBlockDesk } from "@/shared/components/view-block";
+import { FilterProvider } from "@/modules/property/presentation/contexts/filter-context";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +33,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <FilterProvider>
+          <main className="block md:hidden">{children}</main>
+          <main className="hidden md:block"><ViewBlockDesk/></main>
+        </FilterProvider>
+        <Toaster richColors />
       </body>
     </html>
   );

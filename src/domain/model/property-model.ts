@@ -23,10 +23,10 @@ export interface PropertyFilters {
   city?: string;
   state?: string;
   type?: string;
-  priceMin?: number;
-  priceMax?: number;
-  capacity?: number;
-  bedrooms?: number;
+  priceMin?: string;
+  priceMax?: string;
+  capacity?: string;
+  bedrooms?: string;
   amenities?: string[];
   onlyAvailable?: boolean;
 }

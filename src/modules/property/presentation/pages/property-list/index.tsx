@@ -1,27 +1,12 @@
-'use client'
-
-import { useEffect, useState } from "react";
 import { MobileScreen } from "@/shared/layout/mobile-screen";
 import { TopBar, Section, SkeletonList, NotFoundItem, List } from "../../components";
 import { PropertyItem } from "@/domain/model/property-model";
-import { propertyListService } from "../../services/list-service";
-import { makeAxiosHttpClient } from "@/modules/property/main/http";
 
-// type Props = {}
+type Props = {
+  list: PropertyItem[] | null
+}
 
-export default function PropertyList({}) {
-  const [list, setList] = useState<PropertyItem[] | null>(null)
-
-  useEffect(()=>{
-    getPropertyList()
-  },[])
-
-  async function getPropertyList () {
-    const response = await propertyListService(makeAxiosHttpClient(), {})
-
-    setList(response)
-  }
-
+export default function PropertyListPage({ list }: Props) {
   return (
     <MobileScreen>
       <TopBar/>

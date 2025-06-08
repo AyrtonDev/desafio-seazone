@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+!Projeto para o desafio de vaga Frontend Seazone
 
-## Getting Started
+!!!Instrução para instalação do projeto
 
-First, run the development server:
+1) primeiro clone o projeto para seu computador
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2) acesse a pasta em que o projeto baixado
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3) rode em seu terminal o comando
+sh`npm install`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4) após roda o comando de instalação, rode o proximo comando para inicializar o projeto
+sh`npm run dev`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5) se todos os passo forem seguidos de forma correta, acesse: http://localhost:3000/
 
-## Learn More
+6) Opcional: publiquei a versão do projeto na versel, para acessa aqui esta o link:
 
-To learn more about Next.js, take a look at the following resources:
+!!!Decisões técnicas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Usei praticas de SOLID, Design patterns (factory) e clean code, mas tive que adaptar a estrutura, pois usei o App Route do NextJs, tomei a decisão de usar modules e shared com base na minha ultima experiencia para escabilidade e organização, por decisão escolhi Shadcn-ui com Tailwind CSS, pois tem melhor integração com Next, usando Shadcn-ui que usa em seu core os elementos primitivos do Radix, tive a liberdade para fazer BFF para fazer acesso ao link dos dados e trata-los e transformar os dados para melhor uso no frontend, além do fator segurança que pode ser escondido links de acesso do back para servidor do Next.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+!!!Pontos a serem melhorados
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Aumentar a cobertura de testes, estudar melhor formas de implmentação do clean code, Trabalhar sistema de cache para que o server do Next use menos consumo de requisição, design melhor, melhorar implementação de SEO no projeto e fazer melhorias para padronizar o codigo usando o ESlint. 

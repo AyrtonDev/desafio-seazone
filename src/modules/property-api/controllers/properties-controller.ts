@@ -28,7 +28,7 @@ export class PropertiesController implements Controller {
 
       const listFiltered = data?.filter(property => validationFilter(property, filters));
 
-      return ok(listFiltered);
+      return ok(treatmentDataResponseList(listFiltered));
     } catch (error: any) {
       return serverError(error);
     }
