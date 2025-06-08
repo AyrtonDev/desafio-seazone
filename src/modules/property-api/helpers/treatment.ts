@@ -24,7 +24,9 @@ export function treatmentDataResponseItem (data: PropertyT): Property {
   }
 }
 
-export function treatmentDataResponseList(data: PropertyT[]): PropertyItem[] {
+export function treatmentDataResponseList(data: PropertyT[] | undefined): PropertyItem[] {
+  if (!data) return []
+
   return data.map(item => ({
     id: item.id,
     location: {

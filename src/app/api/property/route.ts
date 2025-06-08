@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     capacity,
     bedrooms,
     amenities,
-    available
+    onlyAvailable
   } = filters
 
   const hasFilters = Object.values({
@@ -26,7 +26,7 @@ export async function POST(req: Request) {
     capacity,
     bedrooms,
     amenities: amenities?.length ? amenities : null,
-    available
+    onlyAvailable
   }).some((v) => v !== undefined && v !== null && v !== '' && v !== false);
 
   try {
