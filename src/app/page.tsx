@@ -1,5 +1,5 @@
-import { makePropertyListPage } from "@/modules/property/main/factories/pages/property-list-factory";
+import { makeHomePage } from "@/modules/home/main/factories/home-factory";
 
 export default function Home() {
-  return makePropertyListPage()
+  return makeHomePage()
 }

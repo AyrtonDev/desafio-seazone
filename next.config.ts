@@ -6,7 +6,9 @@ const nextConfig: NextConfig = {
       'images.pexels.com',
       'blog.lojasdonna.com.br',
       'conteudo.imguol.com.br',
-      'cf.bstatic.com'
+      'cf.bstatic.com',
+      'finger.ind.br',
+      'a0.muscache.com'
     ],
   }
 };

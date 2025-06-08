@@ -10,8 +10,6 @@ export const propertyListService = async (httpClient: HttpClient, filters: Prope
       url: baseUrl
     })
 
-    console.log(filters)
-
     return body.body
   } catch {
     return []

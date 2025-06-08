@@ -10,8 +10,6 @@ export function validationFilter (property: PropertyT, filters: PropertyFilters)
   const priceMax = filters.priceMax ? parseFloat(filters.priceMax) : undefined
   const capacity = filters.capacity ? parseInt(filters.capacity) : undefined
   const bedrooms = filters.bedrooms ? parseInt(filters.bedrooms) : undefined
-  console.log(property.isAvailable)
-  console.log(filters.onlyAvailable)
 
   if (priceMin !== undefined && property.pricePerNight < priceMin) return false
   if (priceMax !== undefined && property.pricePerNight > priceMax) return false
